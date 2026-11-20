@@ -16,16 +16,14 @@ Where are the inventory risks (low stock/out of stock) located?
 
 ## 🛠️ Tech Stack & Tools
 
-Python (Pandas, NumPy): For data cleaning, handling missing values, and feature engineering (calculating Profit Margins and Stock Status).
-
-SQL Server: For data extraction, aggregation, and validation of core business metrics.
-
-Power BI: For data modeling (star schema), DAX measure, and interactive dashboard design.
+*   **Python (Pandas, NumPy):** Profiled missing values and performed data cleaning. 
+*   **SQL Server:** Data extraction, aggregation, and data validation (using dedicated data-quality checks). Additionally, implemented core feature engineering—calculating profit margins and classifying stock status through SQL views. Stock status thresholds are defined as: 0 = Out of Stock, 1–10 = Low Stock, and above 10 = In Stock.
+*   **Power BI: ** Data modeling, DAX measures (for calculating profit metrics where applicable), and interactive dashboard design.
 
 
 ## 📊 Dataset
 
-- **Source:** [Maven Analytics – Mexico Toy Sales Dataset](https://mavenanalytics.io/data-playground)
+- **Source: ** [Maven Analytics – Mexico Toy Sales Dataset](https://mavenanalytics.io/data-playground)
 - **Date range:** January 2022 – September 2023 *(based on the sales records; verify against the imported dataset before publishing).*
 - **Size:** 4 CSV files containing Products, Stores, Sales and Inventory data. Exact row and column counts to be confirmed from the source files.
 - **Key fields:**
@@ -98,8 +96,8 @@ Insights & Recommendations: Actionable business takeaways.
 
 - **Category Performance:** Toys generated the highest overall revenue ($5.09M) and gross profit ($1.08M) with a 21.19% margin. However, Electronics achieved the highest gross profit margin at 44.57%.
 - **Store performance:** Maven Toys Ciudad de Mexico 2 was the top-performing store, generating approximately $550K in revenue and $170K in gross profit (30.91% gross margin).
-- **Sales Trends:** Revenue peaked in April 2022 ($681,073) and again in March 2023 ($883,516). During this same timeframe, profit increased from $180,089 to $231,909.
-- **Inventory Management:** Inventory risks are highly localized. Low-stock records (10 units or fewer) were highest at Maven Toys Ciudad de Mexico 1 and Saltillo 1 (13 records each). Out-of-stock records were highest at La Paz 1 and Mexicali 2 (5 records each). Guadalajara 1 had the lowest total stock on hand (367 units).
+- **Sales Trends:** Revenue peaked in April 2022 ($681,073) and again in March 2023 ($883,516). During this same timeframe, profit increased from $190,099 to $231,909.
+- **Inventory Management:** Inventory risks are highly localized. Low-stock records (10 units or fewer) were highest at Maven Toys Ciudad de Mexico 1 and Saltillo 1 (19 records each). Out-of-stock records were highest at La Paz 1 and Mexicali 2 (5 records each). Guadalajara 1 had the lowest total stock on hand (367 units).
 
 ## ✅ Recommendations
 
