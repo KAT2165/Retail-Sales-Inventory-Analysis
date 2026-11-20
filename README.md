@@ -26,11 +26,12 @@ Where are the inventory risks (low stock/out of stock) located?
 - **Source: ** [Maven Analytics – Mexico Toy Sales Dataset](https://mavenanalytics.io/data-playground)
 - **Date range:** January 2022 – September 2023 *(based on the sales records; verify against the imported dataset before publishing).*
 - **Size:** 4 CSV files containing Products, Stores, Sales and Inventory data. Exact row and column counts to be confirmed from the source files.
-- **Key fields:**
-  - **Products:** Product_ID, Product_Name, Product_Category, Product_Cost, Product_Price
-  - **Stores:** Store_ID, Store_Name, Store_City, Store_Location, Store_Open_Date
-  - **Sales:** Sale_ID, Date, Store_ID, Product_ID, Units
-  - **Inventory:** Store_ID, Product_ID, Stock_On_Hand
+- The project utilizes four main tables. Data preparation included profiling missing values and cleaning data in Python before ingesting into SQL Server.
+
+- **Sales:** 829,262 records, 11 columns (Transaction-level sales data)
+- **Inventory:** 1,590 records, 4 columns (Current stock levels by store and product)
+- **Products:** 35 records, 4 columns (Product hierarchy and cost data)
+- **Stores:** 50 records, 5 columns (Store locations and types)
 
 ### Data Preparation
 
@@ -98,3 +99,45 @@ Preparation included:
 - Leverage Seasonal Trends: Investigate the factors behind the March 2023 peak (e.g., product demand, promotions, seasonality) and use these historical trends to support future sales, staffing, and inventory planning.
 - Prioritize Inventory Replenishment: Prioritize product-level stock reviews at stores with low or zero inventory (especially La Paz 1, Mexicali 2, Saltillo 1, and Ciudad de Mexico 1). Align replenishment decisions with sales demand to reduce potential stock shortages.
 
+## ▶️ How to Reproduce
+### Prerequisites
+-Python 3.9+
+-SQL Server Management Studio (SSMS)
+-Power BI Desktop
+-Required Python packages (pip install -r requirements.txt)
+
+### Steps
+-Clone the repository:
+
+bash
+git clone [repository-url]
+cd [repository-name]
+
+-Run Python Scripts: Navigate to the notebooks/ folder and run the Jupyter notebooks/scripts to profile missing values and clean the raw datasets.
+
+-Execute SQL Scripts: Open SQL Server Management Studio, import the cleaned data, and run the scripts in the sql/ folder. This will perform data-quality checks and generate the four analytical views (vw_SalesSummary, vw_InventoryStatus, etc.).
+
+-Open the Dashboard: Open the .pbix file located in the powerbi/ folder. Update the data source parameters to connect to your local SQL Server instance, then refresh the data.
+
+## 🚀 Future Improvements
+-Add demand forecasting to predict future inventory needs.
+
+-Integrate automated low-stock and replenishment alerts.
+
+-Include real-time or near-real-time inventory data feeds.
+
+-Expand analysis with customer segmentation or market basket analysis.
+
+## 📄 License and Data Attribution
+### Project Code
+The original code, SQL scripts, analysis workflows and documentation in this repository are licensed under the MIT License.
+
+### Dataset Attribution
+This project uses the Mexico Toy Sales dataset provided by Maven Analytics.
+
+The dataset remains the property of its respective owner or rights holder and is subject to its original licensing and usage terms.
+
+This repository does not claim ownership of the original dataset. Please refer to the original dataset source for access, attribution and redistribution requirements.
+
+### Disclaimer
+This project was developed for educational and portfolio purposes. The analysis and recommendations are based on the available dataset and should not be interpreted as actual business performance reports from any company.
