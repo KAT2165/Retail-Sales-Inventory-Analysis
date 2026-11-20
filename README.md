@@ -33,5 +33,5 @@ Sales Performance: Deep dive into category profitability and store performance.
 ![Inventory Analysis](powerbi/screenshots/inventory_analysis.png)
 Inventory Analysis: Monitoring stock availability and replenishment needs.
 
-![Uploading Business Insights and Recommendation.png…]()
+![Business Insights and Recommendation](powerbi/screenshots/Business Insights and Recommendation).
 Insights & Recommendations: Actionable business takeaways.
