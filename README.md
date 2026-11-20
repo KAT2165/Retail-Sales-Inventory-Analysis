@@ -21,3 +21,17 @@ Python (Pandas, NumPy): For data cleaning, handling missing values, and feature 
 SQL: For data extraction, aggregation, and validation of core business metrics.
 
 Power BI: For data modeling (Star Schema), DAX measure creation, and interactive dashboard design.
+
+🖥️ Dashboard Preview
+
+![Dashboard Overview](powerbi/screenshots/overview.png)
+Overview: High-level KPIs and monthly trends
+
+![Sales Analysis](powerbi/screenshots/sales_analysis.png)
+Sales Performance: Deep dive into category profitability and store performance.
+
+![Inventory Analysis](powerbi/screenshots/inventory_analysis.png)
+Inventory Analysis: Monitoring stock availability and replenishment needs.
+
+![Uploading Business Insights and Recommendation.png…]()
+Insights & Recommendations: Actionable business takeaways.
