@@ -13,3 +13,11 @@ Which product categories drive the most revenue vs. the most profit?
 Which stores are top performers, and which are lagging?
 
 Where are the inventory risks (low stock/out of stock) located?
+
+🛠️ Tech Stack & Tools
+
+Python (Pandas, NumPy): For data cleaning, handling missing values, and feature engineering (calculating Profit Margins and Stock Status).
+
+SQL: For data extraction, aggregation, and validation of core business metrics.
+
+Power BI: For data modeling (Star Schema), DAX measure creation, and interactive dashboard design.
