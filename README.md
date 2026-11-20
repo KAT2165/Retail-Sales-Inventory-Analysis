@@ -68,30 +68,21 @@ Preparation included:
 
 🖥️ Dashboard Preview
 
-### Overview
+### Executive Overview
 
-<img width="1148" height="650" alt="Retail Sales and Inventory Dashboard" src="https://github.com/user-attachments/assets/03c91e12-2e68-4fb0-a894-aada1060bf32" />
-
-Overview: High-level KPIs and monthly trends
+![Executive Overview](powerbi/screenshots/executive-overview.png)
 
 ### Sales Performance
 
-<img width="1136" height="650" alt="Sales Perfomance Dashboard" src="https://github.com/user-attachments/assets/f8f1cdb3-f30f-4d93-a17b-29d37e6da46c" />
-
-Sales Performance: Deep dive into category profitability and store performance.
+![Sales Performance](powerbi/screenshots/sales-performance.png)
 
 ### Inventory Analysis
 
-<img width="1146" height="592" alt="Inventory Analysis Dashboard" src="https://github.com/user-attachments/assets/6046ccc2-3b92-4cc0-a15a-94fb6c3b3589" />
+![Inventory Analysis](powerbi/screenshots/inventory-analysis.png)
 
-Inventory Analysis: Monitoring stock availability and replenishment needs.
+### Business Insights
 
-### Insights & Recommendations
-
-<img width="1100" height="618" alt="Business Insights and Recommendation" src="https://github.com/user-attachments/assets/7c87b73c-7886-4e7f-89ae-4a8a9001806a" />
-
-Insights & Recommendations: Actionable business takeaways.
-
+![Business Insights](powerbi/screenshots/business-insights.png)
 ## 💡 Key Results / Insights
 
 - **Category Performance:** Toys generated the highest overall revenue ($5.09M) and gross profit ($1.08M) with a 21.19% margin. However, Electronics achieved the highest gross profit margin at 44.57%.
